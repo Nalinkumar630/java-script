@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        <script>
+            const form = document.getElementById('registerform');
+          Form.addEventListener('submit', function(e){
+            e.preventDefault()
+          const user = document.getElementById('username').value;
+          const email = document.getElementById('email').value;
+            const mobile = document.getElementById('mobile').value;
+            console.log("you are submitted succesfully");
+            console.log(user,email,mobile);
+          })
+    </style>
+</head>
+<body>
+    <form id="registerform">
+        <h1>Registration Form</h1>
+        <label>username</label>
+        <br>
+        <input type="text" placeholder="enter user name">
+        <br>
+        <label>Email</label>
+        <br>
+        <input type="email" placeholder="enter email">
+        <br>
+        <label>Mobile number</label>
+        <br>
+        <input type="number" placeholder="enter mobile number">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
